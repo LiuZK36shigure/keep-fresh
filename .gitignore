@@ -1,3 +1,35 @@
+# ── 操作系统 / 编辑器 ──
 Thumbs.db
 .DS_Store
 *.log
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# ── Node ──
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+.pnpm-store/
+
+# ── 密钥与环境变量（绝不入库）──
+.env
+.env.*
+!.env.example
+
+# ── 数据库与备份（V0 的数据文件，绝不入库）──
+*.db
+*.db-journal
+*.db-wal
+*.sqlite
+*.sqlite3
+data/
+backups/
+
+# ── 测试与覆盖率 ──
+coverage/
+
+# ── Cloudflare / Wrangler（V1 起才会用到，先备好）──
+.wrangler/
+.dev.vars
